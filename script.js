@@ -1,35 +1,36 @@
 //complete this code
 class Rectangle {
-  constructor(width, height) 
-  {
-    this._width = width;
-    this._height = height;
-  }
+	constructor(width ,height)
+	{
+		this.width=width;
+		this.height=height;
+	}
 
-  get getWidth() 
-  {
-    return this._width;
-  }
-  get getHeight() 
-  {
-    return this._height;
-  }
-  getArea() 
-  {
-    let area = this._height * this._width;
-    return area;
-  }
+	get getWidth()
+	{
+		return this.width;
+	}
+
+	get getHeight()
+	{
+		return this.height;
+	}
+
+	getArea()
+	{
+		return (this.width) * (this.height);
+	}
 }
 
-class Square extends Rectangle {
-  constructor(_width) 
-  {
-    super(_width, _width);
-  }
-  getPerimeter() 
-  {
-    return 4 * this._width;
-  }
+class Square extends Rectangle  {
+	constructor(width)
+	{
+		super(width,width);
+	}
+	getPerimeter()
+	{
+		return 4*(this.width);
+	}
 }
 
 // Do not change the code below this line
